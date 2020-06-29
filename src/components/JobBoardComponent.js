@@ -60,12 +60,12 @@ const JobBoardComponent = ({
         <h3 className="font-bold text-teal-500">
           {company}
           {isNew && (
-            <span className="text-teal-100 bg-teal-500 font-bold m-2 py-1 px-2 rounded-full uppercase text-lg">
+            <span className="text-teal-100 bg-teal-500 font-bold m-2 py-1 px-2 rounded-full uppercase text-sm">
               New
             </span>
           )}
           {featured && (
-            <span className="bg-gray-800 text-white font-bold m-2 py-1 px-2 rounded-full uppercase text-lg">
+            <span className="bg-gray-800 text-white font-bold m-2 py-1 px-2 rounded-full uppercase text-sm">
               Featured
             </span>
           )}
