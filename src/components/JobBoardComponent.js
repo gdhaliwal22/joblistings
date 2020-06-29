@@ -32,6 +32,7 @@ const JobBoardComponent = ({
     languages,
     tools,
   },
+  handleTagCLick,
 }) => {
   const tags = [role, level];
 
@@ -80,7 +81,10 @@ const JobBoardComponent = ({
       >
         {tags
           ? tags.map((tag) => (
-              <span className="text-teal-500 bg-teal-100 font-bold mr-4 mb-4 p-2 rounded sm:mb-0">
+              <span
+                onClick={() => handleTagCLick(tag)}
+                className="text-teal-500 bg-teal-100 font-bold mr-4 mb-4 p-2 rounded sm:mb-0"
+              >
                 {tag}
               </span>
             ))
