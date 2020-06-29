@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
       {jobs.length === 0 ? (
         <p>Jobs are fetching...</p>
       ) : (
